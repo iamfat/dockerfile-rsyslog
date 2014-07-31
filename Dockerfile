@@ -10,5 +10,4 @@ ADD supervisor.rsyslog.conf /etc/supervisor/conf.d/rsyslog.conf
 
 # override /etc/rsyslog.d to change settings
 
-ENTRYPOINT ["/usr/bin/supervisord"]
-CMD ["-c", "/etc/supervisor/supervisord.conf"]
+CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
